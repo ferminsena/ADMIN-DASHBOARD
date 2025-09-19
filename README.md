@@ -1,6 +1,1 @@
-[reports.html](https://github.com/user-attachments/files/22426872/reports.html)
-[settings.html](https://github.com/user-attachments/files/22426874/settings.html)[documents.html](https://github.com/user-attachments/files/22426880/documents.html)
-[applications.html](https://github.com/user-attachments/files/22426879/applications.html)
-[admin_dashboard.html](https://github.com/user-attachments/files/22426878/admin_dashboard.html)
-[users.html](https://github.com/user-attachments/files/22426877/users.html)
-[students.html](https://github.com/user-attachments/files/22426876/students.html)
+
