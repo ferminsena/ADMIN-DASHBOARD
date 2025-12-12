@@ -17,11 +17,11 @@ flowchart LR
   end
 
   subgraph Data["MySQL Database"]
-    DB[("users, applications, students,\nsections, documents, schedules,\ngrades, system_settings,\ndocument_requirements, email_queue ...")]
+    DB["users, applications, students,<br/>sections, documents, schedules,<br/>grades, system_settings,<br/>document_requirements, email_queue ..."]
   end
 
   subgraph Storage["Local Storage"]
-    Files[/uploads folder<br/>(PDF/JPG/PNG docs)]
+    Files["/uploads folder<br/>(PDF/JPG/PNG docs)"]
   end
 
   UI -->|HTTP+JWT| API
