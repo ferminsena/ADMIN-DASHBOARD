@@ -3,25 +3,25 @@
 ```mermaid
 flowchart LR
   subgraph Client["User Browser"]
-    UI[HTML/CSS/JS pages\n(index, login, dashboards, forms)]
+    UI["HTML/CSS/JS pages<br/>(index, login, dashboards, forms)"]
   end
 
   subgraph Auth["Authentication"]
-    FB[Firebase Auth\n(email/password, tokens)]
+    FB["Firebase Auth<br/>(email/password, tokens)"]
   end
 
   subgraph Backend["PHP API (Apache/XAMPP)"]
-    API[REST-like PHP endpoints\n(api/login.php, students/, sections/, settings/, documents/, applications/ ...)]
-    Queue[Email Queue\nprocess_queue_cron.php / VPES_Email_Queue_Task.xml]
-    Uploads[File Upload Handlers\napi/upload_document_enhanced.php → /uploads]
+    API["REST-like PHP endpoints<br/>(api/login.php, students/, sections/, settings/, documents/, applications/ ...)"]
+    Queue["Email Queue<br/>process_queue_cron.php / VPES_Email_Queue_Task.xml"]
+    Uploads["File Upload Handlers<br/>api/upload_document_enhanced.php -> /uploads"]
   end
 
   subgraph Data["MySQL Database"]
-    DB[(users, applications, students,\nsections, documents, schedules,\ngrades, system_settings,\ndocument_requirements, email_queue ...)]
+    DB[("users, applications, students,\nsections, documents, schedules,\ngrades, system_settings,\ndocument_requirements, email_queue ...")]
   end
 
   subgraph Storage["Local Storage"]
-    Files[/uploads folder\n(PDF/JPG/PNG docs)]
+    Files[/uploads folder<br/>(PDF/JPG/PNG docs)]
   end
 
   UI -->|HTTP+JWT| API
